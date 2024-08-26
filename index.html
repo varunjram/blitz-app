@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IoT Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>IoT Dashboard</h1>
+        </div>
+        <div class="control-panel">
+            <h2>Controls</h2>
+            <label for="device-control">Device Control:</label>
+            <input type="text" id="device-control" placeholder="Enter command">
+            <button onclick="sendCommand()">Send</button>
+        </div>
+        <div class="display-panel">
+            <h2>Sensor Data</h2>
+            <div>
+                <strong>Temperature:</strong> <span id="temperature">--</span> °C
+            </div>
+            <div>
+                <strong>Pressure:</strong> <span id="pressure">--</span> hPa
+            </div>
+            <div>
+                <strong>Angle:</strong> <span id="angle">--</span> °
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
